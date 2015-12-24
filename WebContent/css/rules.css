@@ -1,0 +1,26 @@
+@import url(common.css); 
+
+#addWrap  {  display: block; margin: 0px auto; width: 100%;  background: #efefef;  }
+#addWrap .con  {   cursor: default;   }
+#addWrap h5 {  display: block;  text-align: center; font-size: 18px; }
+#addWrap ul {  display: block; height: auto;  padding: 20px;  }
+#addWrap ul li {  display: block;  text-indent: 20px;   height: auto; line-height: 40px; }
+#addWrap ul li span:HOVER { background: white; }
+#addWrap b { width: auto;   height: 40px; padding: 0px 5px; font-size: 14px;  display: inline; text-align: left;  }
+#addWrap ul li b:FIRST-CHILD {   width: 130px; text-align: right; display: inline-block;   }
+
+#addWrap b input  { width:30px;overflow-x:visible;overflow-y:visible;  height: 30px; font-size: 14px;  display: inline; text-indent: 5px;  }
+#addWrap  a {   font-size: 14px;  display: inline-block; margin: 0px auto; text-indent: 0px; }
+
+
+#allRules ul {   display: block;  height: auto;  padding: 20px;   }
+#allRules ul li {  display: inline-block;  width: 300px;  height: auto; line-height: 20px; font-size: 14px; border-right: 1px solid #ddd;  }
+#allRules ul li:HOVER {  background: #eee; }
+#allRules ul li h5 {  display: block; text-align: center; font-size: 18px; font-weight: bold; height: 30px; line-height: 30px;   }
+#allRules ul li h5 span {  font-size: 18px; font-weight: bold; height: 30px; line-height: 30px; color: red;  }
+#allRules ul li b {  display: block; text-align: right;    height: auto; line-height: 20px; padding-left: 10px; padding-right: 10px; }
+#allRules ul li b:HOVER { background: #ddffee;  }
+#allRules ul li b:HOVER input  {  background: #fff;   }
+#allRules ul li a {  font-size: 20px; width: 30px; padding-left:5px; padding-right: 5px; min-width: 0px;   }
+#allRules b input  { width:150px; height: 30px; text-align: left; text-indent: 5px;  display: inline;  border: none; background: none; }
+#allRules b input:AFTER { background: lime;   }

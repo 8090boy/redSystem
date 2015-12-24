@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="dojo10/dojo/dojo.js" data-dojo-config="isDebug:true, parseOnLoad:false"></script>
+<script type="text/javascript" src="dojo10/extend/crud.js"></script>
+<link href="ss/user.css" rel="stylesheet">
+</head>
+<body>
+	<h4>添加会员</h4>
+	<div id="editUser">
+		<form name="userForm">
+			<ul>
+				<li id="uMail" style="display: none;"><b> 邮箱：</b><b> <input type="email" name="uMail" value="1918707016@qq.com" /></b><b>必填！</b></li>
+				<li id="uMob"><b> 手机：</b><b><input type="text" name="uMob" value="13678560099" /></b><b>必填！</b></li>
+				<li id="passWord" style="display: none;"><b> 密码：</b><b><input type="text" name="passWord" value="123456" /></b><b>可选！</b></li>
+				<li id="userName"><b> 支付宝姓名：</b><b><input type="text" name="userName" value="" /></b><b>必填！</b></li>
+				<li id="uAccount"><b> 支付宝帐号：</b><b><input type="text" name="uAccount" value="" /></b><b>必填！</b></li>
+				<li id="integral" style="display: none;"><b> 总积分：</b><b><input type="text" name="integral" value="7300" /></b><b>必填！</b></li>
+				<li><a class="return" href="./perfect.html">返回所有</a><a id="add" href="javascript: void(0)">另存为新会员</a></li>
+			</ul>
+		</form>
+	</div>
+</body>
+</html>

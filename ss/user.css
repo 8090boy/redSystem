@@ -1,0 +1,41 @@
+* { margin: 0px; padding: 0px; list-style: none; 	border: 0px;	font-size: 14px; text-decoration: none; font-family: arial ; font-weight: lighter;   }
+input,select {	border: 1px solid #dddddd;}
+a { display: inline-block; margin: 0px auto; width: 80px; height: 30px; line-height: 30px;  text-align: center; background: green; color: white; font-size: 12px; margin: 5px; }
+a:HOVER {  background: orange;    }
+a.index { display: block; margin: 0px auto;  width: 120px; height: 50px;   line-height: 50px; font-size: 20px;  }
+h4 { display: block; text-align: center; width: 100%; margin: 10px 0px; color: green;  }
+
+#mask {	width: 100%;	height: 100%;	position: fixed;
+	z-index: 1000;	background: black;	 display: none;
+	/** background: url("loggin.gif") no-repeat center 50%; **/
+	filter: alpha(opacity =   50); /*IE滤镜，透明度50%*/
+	-moz-opacity: 0.5; /*Firefox私有，透明度50%*/	opacity: 0.5;
+	filter: alpha(opacity =   50); /*其他，透明度50%*/ }
+#editWrap { z-index: 1001; position: absolute; margin-left: -400px; margin-bottom: 100px; left: 50%; top: 100px;  width: 800px; height: 400px;   background: white; }
+#closeWrap { position: absolute; right: 0px; top: 0px; cursor: pointer; color: #999;  display: block; width: 40px; height: 40px; line-height: 40px; text-align: center;  font-size: 24px;  background: white; }
+#closeWrap:HOVER { background: #999; color: white;  }
+
+ 
+ #con   { width: 100%; height: auto;  display: block; }
+ #con ul   { width: 100%;  display: block; }
+ #con ul li  { width: 100%;  display: block;   border-bottom: 1px solid #999;   }
+ #con ul li b { height: auto; text-align: left; line-height: 16px; font-size: 12px;  display: inline-block;   padding-left: 5px; padding-right: 5px;   }
+ #con ul li:HOVER {  background: #efefff; cursor: pointer;  }
+ #con ul li b:HOVER {  text-decoration: underline;  }
+ #con ul li b input  { width: 200px; height: auto;   }
+ 
+ table  { width: 100%  }
+ table tr  td {  padding: 0px 5px; font-family: arial; font-size: 12px;  border-bottom: 1px solid #999;   }
+
+#editUser {  width: 100%; height: auto;  margin: 0px auto;   }
+#editUser * { font-family: microsoft YaHei;  }
+#editUser h4  { display: block; height: 30px; margin-top: 20px; line-height: 30px; font-size: 18px;
+text-align: left; text-indent: 20px; border-bottom: 1px solid #ddd;  }
+#editUser ul  { display: block; height: auto; margin-top: 20px;  }
+#editUser ul li  { display: block;  height: auto;  line-height: 30px; margin: 20px 0px;  text-align: left;  }
+#editUser ul li t { display: inline-block; width: 100px; text-align: right;  }
+#editUser ul li b { display: inline-block;   text-align: left;  }
+#editUser ul li b input {   display: block; width: 300px; height: 24px; line-height: 24px;  text-indent: 10px;  }
+
+
+.return { background: gray; }

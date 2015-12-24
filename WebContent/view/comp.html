@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>公司管理</title>
+<script type="text/javascript" src="/js/jquery1111min.js"></script>
+<script type="text/javascript" src="/js/comp.js"></script>
+<link href="/css/comp.css" rel="stylesheet" />
+
+</head>
+<body>
+	<a href="/admin/S.go">系统管理主界面</a>
+	<h3>公司管理</h3>
+	<h5>
+		将：<input id="mob" type="text" value="输入手机号" /><a href="javascript:void(0)" onclick="C.Uas(2)">设为违规</a><a href="javascript:void(0)" onclick="C.Uas(1)">设为股东</a><a href="javascript:void(0)" onclick="C.Uas(0)">设为会员</a>
+	</h5>
+	<ul>
+
+
+
+
+		<li><h4>序列号</h4></li>
+		<li><b>总序列号：</b><b id="snCount">0000</b><b>个</b></li>
+		<li><b>本月序列号：</b><b id="snCurrentMonth">0000</b><b>个</b></li>
+
+		<li><h4>红包</h4></li>
+		<li><b>已发放红包层：</b><b id="endLayer">0000</b><b>个</b></li>
+		<li><b>累计发放红包数量：</b><b>0000</b><b>个</b></li>
+		<li><b>本月累计发放红包总金额：</b><b>0000</b><b>个</b></li>
+
+		<li><h4>股东</h4></li>
+		<li><b>股东总数：</b><b id="shareCount">0000</b><b>个</b></li>
+		<li><a onclick="C.US()" href="javascript:void(0)">所有股东列表</a></li>
+		<li><a onclick="C.MYRU()" href="javascript:void(0)">朋友圈</a><b id="myRecCount">0000</b></li>
+		<li><a onclick="C.MYCITY()" href="javascript:void(0)">My city</a><b id="myCity">0000</b></li>
+		<li>推荐<input type="text" id="recMob" value="请输入手机号" /> <a onclick="C.MYADD()" href="javascript:void(0)">确定推荐</a></li>
+
+		<li><h4>会员</h4></li>
+		<li><b>总会员：</b><b id="uCount">0000</b> <b>个</b></li>
+		<li><b>普通会员：</b><b id="userCount">0000</b><b>个</b></li>
+		<li><b>违规会员：</b><b id="userWGCount">0000</b><b>个</b></li>
+		<li><b>本月会员：</b><b>0000</b><b>个</b></li>
+		<li><b>分区域查看会员总数 ：</b><b>0000</b><b>个</b></li>
+
+
+
+
+	</ul>
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,107 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	border: 0px;
+	font-size: 16px;
+	text-decoration: none;
+	font-family: Arial, Microsoft YaHei;
+	font-weight: lighter;
+
+}
+
+div {
+		cursor: default;
+	moz-user-select: -moz-none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+input,select {
+	border: 1px solid #dddddd;
+}
+
+a {
+	cursor: pointer;
+	display: inline-block;
+	margin: 5px;
+	padding: 2px 5px;
+	min-width: 80px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	background: green;
+	color: white;
+}
+
+a:HOVER {
+	background: orange;
+}
+
+a.index {
+	display: block;
+	margin: 0px auto;
+	width: 120px;
+	height: 50px;
+	line-height: 50px;
+	font-size: 20px;
+}
+
+#mask {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0px;
+	z-index: 1000;
+	background: black;
+	display: none;
+	filter: alpha(opacity =       50); /*IE滤镜，透明度50%*/
+	-moz-opacity: 0.5; /*Firefox私有，透明度50%*/
+	opacity: 0.5;
+	filter: alpha(opacity =       50); /*其他，透明度50%*/
+}
+
+#wrap {
+	z-index: 1001;
+	position: fixed;
+	margin-left: -300px;
+	margin-top: -200px;
+	left: 50%;
+	top: 50%;
+	width: 600px;
+	height: 400px;
+	background: white;
+}
+
+#closeWrap {
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	cursor: pointer;
+	color: #999;
+	display: block;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	font-size: 25px;
+	background: white;
+}
+
+#closeWrap:HOVER {
+	color: red;
+}
+
+#wrap h4 {
+	display: block;
+	height: 40px;
+	margin-top: 10px;
+	line-height: 40px;
+	font-size: 22px;
+	text-align: left;
+	text-indent: 20px;
+	border-bottom: 1px solid #ddd;
+}

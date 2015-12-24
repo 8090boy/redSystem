@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+</head>
+<body>
+
+	<div id="editUser">
+		<h4>完善我的信息</h4>
+		
+		<form name="creator">
+		<input   type="hidden"    name="uAddress" readonly="readonly" />
+		<input    type="hidden"  name="id" readonly="readonly" 	/>
+		<input type="hidden" name="uIdCard"  />
+		<input type="hidden" name="uBank"  />
+			<ul>
+				<li><t>省份：</t><b><select name="province" onchange="u.select();"></select></b><b>城市：<select 
+				name="city" onchange="u.select();"></select></b></li>
+				<li><t>收款人支付宝姓名：</t><b> <input type="text" name="userName" /></b></li>
+				<li><t>收款人支付宝帐号：</t><b> <input type="text" name="uAccount"  /></b></li>
+				<li></li>
+				<li><a href="javascript: void(0)" onclick="u.updateUser()">确定修改</a></li>
+			</ul>
+		</form>
+	</div>
+</body>
+</html>

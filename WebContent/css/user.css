@@ -1,0 +1,19 @@
+@import url(common.css); 
+
+#con {  width: 100%; height: auto;  margin: 0px auto; }
+ #con span{ width: 50%; height: 30px; line-height: 30px;    text-align: center; display: inline-block;  }
+ .sMenu {  background: #bbb;   color:#999;   }
+ .active  {   background: white; color: orange; font-weight: bold;   }
+ #con span:first-letter{font-size:1.8em;padding-right:5px; text-transform:uppercase; line-height: 30px; }
+#con ul  { display: block; height: auto; margin-top: 30px; margin-bottom: 40px;  }
+#con ul li  { display: block;  height: auto;  line-height: 24px; margin: 15px 0px;  text-align: left; padding-left: 40px; }
+#con ul li t { display: inline-block; width: 100px; text-align: right;  }
+#con ul li a {    padding: 5px 10px; height: 24px; line-height: 24px;  }
+#con ul li b { display: inline-block;   text-align: left; padding: 0px 5px; height: 24px; line-height: 24px; color: #666;  }
+#con ul li b img { display: inline-block;  width: 80px; height: 24px; line-height: 24px;   background: blue;  }
+#con ul li b select {   display: block; width: 120px; height: 24px; line-height: 24px;    }
+#con ul li b input {   display: block; width: 160px; height: 24px; line-height: 24px;  text-indent: 10px;  }
+#con #ul2  { margin-top: 50px; margin-bottom: 50px; display: none;  }
+#con #ul2 li  {  margin: 30px 0px;  padding-left: 100px;   }
+#con input[name="uMobCheckCode"] { width: 60px; }
+#con h5  { text-align: center; display: block; }

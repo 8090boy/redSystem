@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" "http://www.springframework.org/dtd/spring-beans-2.0.dtd" [
+<!ENTITY contextInclude SYSTEM "org/springframework/web/context/WEB-INF/contextInclude.xml">
+]>
+
+<beans>
+	<!-- userDao -->
+	<bean id="daoUser" class="controller.dao.DAOUser">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<bean id="serviceUserBase" class="controller.service.ServiceUser">
+		<property name="daoUser" ref="daoUser"></property>
+		<property name="serviceSerialNumber" ref="serviceSerialNumber"></property>
+	</bean>
+	<bean id="serviceUser" parent="transactionBese">
+		<property name="target" ref="serviceUserBase"></property>
+	</bean>
+
+	<!-- Assign -->
+	<bean id="daoAssign" class="controller.dao.DAOAssign">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<bean id="serviceAssignBase" class="controller.service.ServiceAssign">
+		<property name="daoAssign" ref="daoAssign"></property>
+	</bean>
+	<bean id="serviceAssign" parent="transactionBese">
+		<property name="target" ref="serviceAssignBase"></property>
+	</bean>
+
+
+	<!-- Earnings -->
+	<bean id="daoEarnings" class="controller.dao.DAOEarnings">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<bean id="serviceEaningsBase" class="controller.service.ServiceEanings">
+		<property name="daoEarnings" ref="daoEarnings"></property>
+	</bean>
+	<bean id="serviceEanings" parent="transactionBese">
+		<property name="target" ref="serviceEaningsBase"></property>
+	</bean>
+
+
+	<!-- Exchange -->
+	<bean id="daoExchange" class="controller.dao.DAOExchange">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<bean id="serviceExchangeBase" class="controller.service.ServiceExchange">
+		<property name="daoExchange" ref="daoExchange"></property>
+	</bean>
+	<bean id="serviceExchange" parent="transactionBese">
+		<property name="target" ref="serviceExchangeBase"></property>
+	</bean>
+
+
+
+	<!-- SerialNumber -->
+	<bean id="daoSerialNumber" class="controller.dao.DAOSerialNumber">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<bean id="serviceSerialNumberBase" class="controller.service.ServiceSerialNumber">
+		<property name="daoSerialNumber" ref="daoSerialNumber"></property>
+		<property name="daoUser" ref="daoUser"></property>
+		<property name="daoSysRules" ref="daoSysRules"></property>
+	</bean>
+	<bean id="serviceSerialNumber" parent="transactionBese">
+		<property name="target" ref="serviceSerialNumberBase"></property>
+	</bean>
+
+
+
+
+	<!-- Recomment -->
+	<bean id="daoRecommend" class="controller.dao.DAORecommend">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<bean id="serviceRecommendBase" class="controller.service.ServiceRecommend">
+		<property name="daoRecommend" ref="daoRecommend"></property>
+	</bean>
+	<bean id="serviceRecommend" parent="transactionBese">
+		<property name="target" ref="serviceRecommendBase"></property>
+	</bean>
+
+	<!-- SysRules -->
+	<bean id="daoSysRules" class="controller.dao.DAOSysRules">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<bean id="serviceSysRulesBase" class="controller.service.ServiceSysRules">
+		<property name="daoSysRules" ref="daoSysRules"></property>
+	</bean>
+	<bean id="serviceSysRules" parent="transactionBese">
+		<property name="target" ref="serviceSysRulesBase"></property>
+	</bean>
+
+
+	<!-- 自动加载配置到内存 -->
+ 	<bean id="configGlobal" class="controller.util.ConfigGlobal"> 
+ 	<property name="serviceSysRules" ref="serviceSysRules"></property>
+ 	<property name="serviceSerialNumber" ref="serviceSerialNumber"></property>
+ 	<property name="serviceUser" ref="serviceUser"></property>
+ 	</bean>
+ 	
+	<bean id="initConfig"		class=" controller.util.InitConfig" />
+
+
+</beans>
